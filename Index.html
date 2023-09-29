@@ -1,0 +1,82 @@
+    <!DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="author" content="Jaroslav Burawa">
+        <link rel=stylesheet href="RestaurantApp.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Restaurant App</title>
+    </head>
+
+    <body>
+
+        <header>
+            <img src="header.png">
+        </header>
+
+        <section id="menu">
+
+            <div id="items">
+                <!-- Here comes the food items -->
+            </div>
+
+        </section>
+
+        <section id="order-container">
+
+            <div id="order">
+                <!-- Here comes the order summary -->
+            </div>
+
+        </section>
+
+        <section id="modal-form-container">
+
+            <div id="modal-form-hidden">
+
+                <h3 id="form-title">Enter Card Details</h3>
+
+                <form id="payment-card-form">
+                    <input type="text"
+                        name="user-name"
+                        placeholder="Enter your name"
+                        required
+                    />
+                    <input type="tel"
+                        name="user-card-nr"
+                        placeholder="Enter card number"
+                        minlength="16"
+                        maxlength="16"
+                        required
+                    />
+                    <input type="tel"
+                        name="user-card-cvv"
+                        placeholder="Enter CVV"
+                        minlength="3"
+                        maxlength="3"
+                        size="3"
+                        required
+                    />
+                    <div id="submit-button">
+                        <button type="submit">Pay</button>
+                    </div>
+                </form>
+
+            </div>
+
+        </section>
+
+        <section id="thx-container">
+
+            <div id="thx-message">
+                <!-- Here comes the thank you message after order payment -->
+            </div>
+
+        </section>
+
+
+        <script src="RestaurantApp.js" type="module"></script>
+    </body>
+
+    </html>

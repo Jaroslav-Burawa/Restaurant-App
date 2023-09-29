@@ -1,0 +1,195 @@
+ @import url('https://fonts.googleapis.com/css2?family=Smythe&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+/* DOCUMENT  ---------------------------------------------- */
+body {
+    width: 600px;
+    height: 1161px;
+    margin: 0 auto;
+    font-family: 'Smythe';
+}
+header {
+    width: 600px;
+    height: 167px;
+}
+/* FOOD ITEMS ------------------------------------------- */
+/* W.T.F. ??????????????????? class instead of ID */
+.items {
+    width: 508px;
+    height: 140px;
+    margin: 0 auto;
+}
+.item-container {
+    display:flex;
+    align-items: flex-start;
+    width: 508px;
+    height: 140px;
+    border-bottom: 1px solid rgb(211, 211, 211);
+    margin-top: 60px;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.item-picture {
+    display: flex;
+    width: 70px;
+}
+.item-info {
+    width: 358px;
+    line-height: 8px;
+    margin-left: 31px;
+}
+.item-name {
+    font-size: 28px;
+    margin-top: 10px;
+    margin-bottom: 0;
+    line-height: 15px;
+}
+.item-description {
+    font-size: 16px;
+    color: rgb(144, 144, 144);
+    line-height: 15px;
+}
+.item-price{
+    font-size: 20px;
+}
+.add-item {
+    width: 50px;
+    height: 50px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 200;
+    color: #464646;
+    fill: none;
+}
+.add-button {
+    cursor: pointer;
+}
+/* ORDER ------------------------------------------------- */
+#order-box {
+    /* display: none; */
+    width: 508px;
+    height: 319px;
+    margin: auto;
+    margin-top: 50px;
+}
+#your-order {
+    font-size: 28px;
+    line-height: 16.8px;
+    margin-top: 0;
+    text-align: center;
+}
+#order-list {
+    list-style-type: none;
+    font-size: 28px;
+    padding-left: 0;
+}
+#order-list li {
+    margin-bottom: 15px;
+    display: flex;
+    gap: 10px;
+}
+.remove-button {
+    background-color: white;
+    border: none;
+    color: #BBB;
+    font-family: Verdana;
+    font-size: 12px;
+    cursor: pointer;
+}
+.price {
+    align-self: flex-end;
+    width: 400px;
+    margin-right: 0;
+    text-align: right;
+}
+hr {
+    height: 1px;
+    background: #393333;
+}
+#total-price-box {
+    display: flex;
+    width: 508px;
+}
+#total-price {
+    font-size: 28px;
+    line-height: 24px;
+}
+#current-price {
+    font-size: 28px;
+    line-height: 24px;
+    margin-left: auto;
+}
+#purchase-button {
+    background-color: #16DB99;
+    border: none;
+    width: 508px;
+    padding: 18px 175px 18px 175px;
+    justify-content: flex-end;
+    align-items: center;
+    border-radius: 3px;
+    color: white;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    cursor: pointer;
+}
+#modal-form-hidden {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%; 
+    transform: translate(-50%, -50%);
+    z-index: 9999; 
+    width: 524px;
+    height: 542px;
+    background-color: white;
+    font-family: Verdana;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, 0.3) 10px 19px 68px, 
+                rgba(0, 0, 0, 0.3) -10px -19px 68px;
+}
+#form-title {
+    text-align: center;
+    font-size: 24px;
+    margin: 46px;
+}
+#payment-card-form {
+    display: flex;
+    flex-direction: column;
+    height: 376px;
+    align-items: center;
+}
+#payment-card-form input {
+    width: 445px;
+    height: 71px;
+    border-radius: 4px;
+    border: 1.3px solid #757575;
+    font-size: 20px;
+    padding-left: 26px;
+    margin-bottom: 23px;
+    outline-color: #16DB99;
+}
+#submit-button button {
+    width: 475px;
+    height: 71px;
+    background-color: #16DB99;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border: none;
+    border-radius: 4px;
+    margin-top: 23px;
+    cursor: pointer;
+}
+#thx-title {
+    width: 402px;
+    height: auto;
+    border-radius: 3px;
+    background-color: rgb(228, 243, 234);
+    color: #065F46;
+    font-size: 32px;
+    font-weight: 400;
+    text-align: center;
+    padding: 51px;
+    margin: 45px;
+}
